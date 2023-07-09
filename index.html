@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Media</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4d349a1f95.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="jquery-3.6.4.min.js"></script> -->
+</head>
+<body>
+
+    <div class="container">
+        <div class="navigator">
+            <div class="icons">
+                <div class="first">
+                    <a href=""><i class="fa-solid fa-comment"></i></a>
+                    <i class="fa-solid fa-message" id="showUsers"></i>
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+                    <a href=""><i class="fa-solid fa-star"></i></a>
+                </div>
+                <div class="last">
+                    <a href=""><i class="fa-solid fa-gear"></i></a>
+                    <a href="login.html"><i class="fa-solid fa-power-off"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="users" id="users">
+            <div class="header">
+                <h2>Chats</h2>
+                <div class="icons">
+                    <h3><i class="fa-solid fa-users"></i></h3>
+                </div>
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="Search Chats....">
+            </div><hr>
+
+           <div class="chat">
+               
+               <a href="">
+                    <div class="notify"></div>
+                    <div class="user">
+                        <div class="img"></div>
+                        <div class="userDetails">
+                            <h4>Spider</h4>
+                            <p id="notify">Good day !! You are welcome</p>
+                        </div>
+                    </div>
+               </a>
+           </div>
+            
+
+        </div>
+
+        <div class="chatBox" id="chatBox">
+            <div class="header">
+                <div class="info">
+                    <div class="img"></div>
+                    <div>
+                        <h4>Spider</h4>
+                        <p>Online</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-video"></i>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
+
+            <div class="msg" id="msgContainer">
+                <h3>Start Conversation</h3>
+                <div class="wrap1">
+                    <div class="msgBody">
+                        <p>Good day !! You are welcome</p>
+                        <div>8:22 AM</div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="typeMsg">
+                <div class="input">
+                    <button id="sendMsg">Send Message</button>
+                    <input type="text" placeholder="Type Message........" id="msg">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
